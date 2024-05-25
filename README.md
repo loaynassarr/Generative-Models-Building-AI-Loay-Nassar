@@ -1,5 +1,5 @@
 # Generative Models 
-Final project for the Building AI course
+Final project for the Building AI course project
 ## Summary
 Creating new images or videos based on a given dataset. This has applications in art, graphics, and entertainment.
 
