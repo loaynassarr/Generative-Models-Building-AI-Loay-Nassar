@@ -1,51 +1,41 @@
-<!-- This is the markdown template for the final project of the Building AI course, 
-created by Reaktor Innovations and University of Helsinki. 
-Copy the template, paste it to your GitHub README and edit! -->
-# Project Title
+# Generative Models 
 Final project for the Building AI course
 ## Summary
-Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
+Creating new images or videos based on a given dataset. This has applications in art, graphics, and entertainment.
+
 ## Background
-Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
-This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
+* Content Generation: Generative models enable the creation of new visual content based on existing datasets. This is particularly useful in scenarios where generating large amounts of diverse content manually would be time-consuming or impractical.
+* Artistic Exploration: Artists and designers can use generative models to explore new styles, patterns, and visual compositions. This allows for experimentation with different aesthetics and can inspire novel artistic expressions.
+* Customization and Personalization: Generative models can generate personalized content tailored to individual preferences or requirements. This could include customizing artwork, graphics, or entertainment content based on user input or demographic information.
+
 ## How is it used?
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
-Images will make your README look nice!
-Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
-![Cat](https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg)
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
-This is how you create code examples:
-```
-def main():
-   countries = ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']
-   pop = [5615000, 5439000, 324000, 5080000, 9609000]   # not actually needed in this exercise...
-   fishers = [1891, 2652, 3800, 11611, 1757]
-   totPop = sum(pop)
-   totFish = sum(fishers)
-   # write your solution here
-   for i in range(len(countries)):
-      print("%s %.2f%%" % (countries[i], 100.0))    # current just prints 100%
-main()
-```
+
+Using generative models for creating new images or videos involves several key steps.
+Initially, data collection and preprocessing are undertaken, where a dataset of existing images or videos is gathered and prepared to serve as the foundation for generating new content. 
+Following this, an appropriate generative model architecture, such as Generative Adversarial Networks (GANs) or Variational Autoencoders (VAEs), is selected, trained using the dataset to learn underlying patterns, and then fine-tuned to optimize the generation process. 
+Once trained, the model is utilized to generate new content by inputting random noise or seed inputs, adjusting parameters to control the style and content of the output. 
+Evaluation metrics are then employed to assess the quality of the generated content, allowing for iterative refinement of the model and generation process. Finally, the model is integrated into relevant applications or workflows, considering factors such as ease of use, customization, quality, scalability, and performance to meet the diverse needs of users including artists, designers, content creators, developers, and researchers across various industries.
+
 ## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+
+DGenerative models utilize diverse data sources, including public datasets like ImageNet and custom datasets, along with synthetic data generation techniques. 
+They employ various AI methods such as Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), autoregressive models, and transformers, as well as hybrid approaches. 
+GANs use adversarial training to generate realistic samples, while VAEs learn latent space representations. Autoregressive models and transformers capture dependencies for pixel or timestep generation. 
+Hybrid approaches combine models for enhanced quality and diversity. These methods enable organizations to develop robust solutions for generating images and videos across different domains and applications.
+
 ## Challenges
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+
+Generative models for image and video creation face challenges such as mode collapse, ensuring quality and fidelity, training instability, data heterogeneity, scalability issues, interpretability, ethical concerns, and evaluation metrics. 
+Overcoming these challenges requires ongoing research, innovation, collaboration, and the development of robust methodologies and guidelines.
+
 ## What next?
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
+
+Advances in generative models aim to overcome challenges like mode collapse and stability issues while ensuring high-quality outputs. 
+Researchers focus on refining algorithms and architectures for better realism, minimizing artifacts, enabling user interaction, and addressing ethical concerns. 
+Cross-modal generation and broad industry applications are emerging areas of interest, driving innovation in creative expression and immersive experiences.
+
+
 ## Acknowledgments
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
+
+*  So far I'm the only one from the people surrounding me. However, I would love to collab at some point with others who view this as exciting.
+To the Elements of Ai Team for this amazing course that made me go through this lovely experience!
